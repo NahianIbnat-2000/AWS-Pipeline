@@ -2,8 +2,9 @@
 This Exercise defines a problem that Katharina Burtscher and Nahian Ibnat wants to solve with AWS 
 
 
-# Repository Structure
+## Repository Structure
 
+```text
 .
 ├── images/
 │   ├── histogram.png
@@ -21,3 +22,4 @@ This Exercise defines a problem that Katharina Burtscher and Nahian Ibnat wants 
 ├── requirements.txt
 ├── LICENSE
 └── README.md
+

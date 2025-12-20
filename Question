@@ -1,0 +1,70 @@
+Data Engineering 1 - Assignment 3
+Exercises to Get Your Feet Wet
+You don't necessarily need to solve these exercises and can work on your use case right away; if you don't have a good idea for a use case, I suggest you solve these exercises so you get a feel for how much time a proper analysis would take.
+
+Find an article on an English-language news site, scrape it, and check the sentiment using Python.
+Find a comparable article on another English-language news site, scrape it, and compare the sentiment—idea: CNN vs. Fox News.
+Find a comparable article on a non-English site, scrape it, and translate it to English with AWS Translate. Then, compare sentiments.
+Find two comparable news channels on YouTube. Download a news video from both as an mp3, using (for example) https://ytmp3.nu/FlCn/. Use AWS Transcribe to convert it to text and analyze the sentiment.
+Homework
+Work in a group of 2: Add your group here
+
+Define a Problem You Want to Solve with AWS
+Figure out a use case: a real-world problem that involves data analysis, and one you can research using AWS Managed Services. An example can be comparing the sentiments of articles on different news sites in different languages about current topics.
+
+Data Analysis
+Solve the problem using AWS AI services. Make sure to use three different AWS Serverless services in Python using the API (like S3, Bedrock, Translate, Comprehend, etc.). Transcribe is an exception: if you use Transcribe, you can use it through the UI, as Transcribe API usage is somewhat complicated.
+
+If you want, you can come up with a problem that you can solve with AWS services we didn't cover (like Kendra for document analysis). Check in with Zoltan to get access to such AWS services.
+
+You can also use other non-AWS Cloud Services that provide an API, given that they offer a free tier or you have an active subscription. Some examples:
+
+fal.ai for image/video generation (free tier is probably enough to generate a handful of images)
+HuggingFace Inference API: They have all the open source models in the world
+Snowflake: Cloud Data Warehouse for SQL and analytics
+Requirements and Delivery
+Write a report about your research methods and findings (details below).
+
+Deliver your results as a medium.com blog post or as a GitHub Repository. On GitHub, use the README.md file for your report.
+
+Explain in your document/blog post explicitly:
+
+The Problem - What are you researching/trying to solve and how
+The Dataset / Data Source
+What you did to arrive at your results
+Your findings/results
+Add a section at the end about the breakdown of the costs of the services used (your trial and failure included). It doesn't need to be an amount down to a penny, but give approximations, like "Using AWS Comprehend on ~1200 words 10 times: $0.12"... Provide a total cost estimate at the end.
+Adding Code
+Add all the code that is required for someone to reproduce your research.
+
+GitHub: Add the code as Python files or Notebooks to the repository. Include relevant code pieces inline in README.md.
+Medium: Add Python code through GitHub gists.
+Grading Criteria
+The clarity and structure of your research, and how well-organized and articulate it is, including the conclusion.
+Understanding of AWS Services: How well you utilized and explained the AWS tools you used.
+Python code and charts: How effectively your code and visualizations support the analysis.
+Your post must contain a minimum of 3 charts or tables.
+All the relevant code must be added as part of the document/blog post.
+Have a meaningful conclusion to your post.
+Estimation of AWS service costs.
+Make sure you don't include any AWS or other credentials in the repo/post.
+AI Use Policy
+Go for it. :)
+
+Here is an example post from a few years ago. It doesn't have a price estimation etc., but you can see the quality requirements for a 100% score: AWS for Political Analysis - 2020 Romanian Parliamentary Elections
+
+Delivery
+Send:
+
+The link to your blog post/GitHub repo (make sure it is publicly accessible to avoid losing points!)
+Along with your student ID in the email subject
+To ceu-data@googlegroups.com
+Getting Help
+Mention @Naida or @Zoltan on Teams. We can't guarantee that we can help you over the weekend.
+
+Courseware: GitHub - serverless.md
+
+Deadline: Tuesday 16 Dec, 11:59 pm
+
+Late Submissions
+1% of "homework completeness" points are deducted every hour between the deadline and the submission date.

@@ -78,18 +78,20 @@ pip install -r requirements.txt
 ├── requirements.txt
 ├── LICENSE
 └── README.md
+```
 
 
+## AWS Service Cost Breakdown
 
-## AWS Cost Estimation
+The table below presents an estimated cost breakdown of AWS services used in this project,
+based on a single execution of the analysis pipeline.
 
-| AWS Service | Usage Description | Pricing Basis | Estimated Cost |
-|------------|------------------|---------------|----------------|
-| Amazon S3 | Storage of one CSV file (<1 MB) and a small number of upload/list requests | $0.023 per GB per month; request costs negligible | ~$0.00 |
-| AWS Translate | Translation of ~30 news articles (English & Bangla), with automatic language detection and chunking for long texts (~60,000 characters total) | $15 per 1 million characters | ~$0.90 |
-| AWS Comprehend | Sentiment analysis on ~30 English-translated articles (~45,000 characters total) | $0.0001 per 100 characters | ~$0.05 |
-| **Total Estimated Cost** | — | — | **~$0.95** |
-
+| Service | Calculation / Details | Estimated Cost |
+|--------|----------------------|----------------|
+| **Amazon S3** | Storage of one CSV file (<1 MB) with a small number of upload and list requests | ~$0.00 |
+| **AWS Translate** | Translation of ~30 articles (English & Bangla), automatic language detection and chunking (~60,000 characters total) at $15 per 1M characters | ~$0.90 |
+| **AWS Comprehend** | Sentiment analysis on ~30 English-translated articles (~45,000 characters total) at $0.0001 per 100 characters | ~$0.05 |
+| **Total Estimated Cost** | — | **~$0.95** |
 
 ### Notes
 - Actual costs may be lower if covered by the AWS Free Tier.

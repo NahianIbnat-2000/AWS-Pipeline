@@ -95,7 +95,7 @@ The list of news sites analyzed can be found in "data/articles_final.csv", along
 | Prothom Alo (Bangla)ো | 10 | Bangla (bn) | Mainstream |
 | **Total** | **30** | — | — | 
 
-#### Data Collection Process
+## Data Collection Process
 
 1. Manual URL Selection: Articles were hand-picked based on:
 
@@ -125,7 +125,8 @@ Data Collection → Translation → Sentiment Analysis → Visualization
 #### AWS Services Implementation
 
 1. Amazon S3 - Data Storage
-   
+
+````````python
 import boto3
 
 s3_client = boto3.client('s3')
@@ -137,6 +138,7 @@ def upload_to_s3(file_path, bucket_name, object_key):
 
 # Store raw and processed data
 upload_to_s3('data/articles_raw.csv', 'bnp-analysis', 'articles_raw.csv')
+````````
 
 ##### Usage:
 
@@ -146,6 +148,7 @@ upload_to_s3('data/articles_raw.csv', 'bnp-analysis', 'articles_raw.csv')
 
 2. AWS Translate - Language Translation
 
+````````python
 translate_client = boto3.client('translate')
 
 def translate_article(text, source_lang='bn', target_lang='en'):
@@ -161,6 +164,7 @@ def translate_article(text, source_lang='bn', target_lang='en'):
 df['translated_text'] = df[df['language'] == 'bn']['content'].apply(
     lambda x: translate_article(x, 'bn', 'en')
 )
+````````
 
 ##### Challenges:
 
@@ -169,7 +173,8 @@ df['translated_text'] = df[df['language'] == 'bn']['content'].apply(
 - Preserving political terminology and proper nouns
 
 3. AWS Comprehend - Sentiment Analysis
-
+   
+````````python
 comprehend_client = boto3.client('comprehend')
 
 def analyze_sentiment(text):
@@ -188,6 +193,7 @@ def analyze_sentiment(text):
 
 # Analyze all articles
 df['sentiment_analysis'] = df['text_english'].apply(analyze_sentiment)
+````````
 
 ##### Analysis Features:
 

@@ -203,10 +203,23 @@ df['sentiment_analysis'] = df['text_english'].apply(analyze_sentiment)
 
 
 
+## Findings
+All articles use predominantly neutral language, as almost 100% of all text is categorized as neutral by AWS comprehend.
 
-## Analysis Results
+1. Sentiment_By_Source.png
+The first image, "Sentiment_By_Source.png" shows the most probable sentiment for each article. Only two articles, both issued by *The Daily Star*, are not neutral, but seem to have a "mixed" sentiment, which means that the sentiments in the article are both positive and negative at the same time. This could indicate that the language of these two articles might just be more emotional than what one might expect from a newspaper article, on average. 
 
+2. Table1.png
+Table1.png shows the relationhip above (categorization in neutral or mixed sentiment), regardless of news source. It only emphasises that only 2 out of 28 articles were of mixed sentiment, and none were explicitly positive or negative.
 
+3. Table2.png
+This shows the same relationship of "Sentiment_By_Source.png", but in tabular form.
+
+4. average_sentiment_scores_by_source.png
+This image displays the positive, negative and neutral sentiment scores, averaged by news source and language. Overall, one can see that The Daily Star exhibits a slightly lower probabilty for their articles to be neutral, compared to Prothom Alo (in both languages). Furthermore, while being predominantly neutral overall, the English articles published by Prothom Alo more often display positive sentiment, than negative. **This fits a larger picture because Prothom Alo is overall more conservative than The Daily Star and thus more aligned with the BNP**
+   
+5. overall_sentiment_distribution.png
+This shows the same relationship as Table2.png but as a graph.
 
 ## AWS Service Cost Breakdown
 

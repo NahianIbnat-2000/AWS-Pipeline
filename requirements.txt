@@ -1,0 +1,12 @@
+# requirements
+
+boto3
+pandas
+requests
+pprint
+sys
+os
+beautifulsoup4
+jupyter
+time
+matplotlib

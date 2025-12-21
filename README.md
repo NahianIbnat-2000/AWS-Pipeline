@@ -263,7 +263,8 @@ Both Nahian and Katharina ran the code multiple times independent from each othe
 
 All three news sources showed remarkably similar sentiment distributions. This suggests relatively balanced reporting on BNP with no strong editorial bias. AWS Translate successfully preserved sentiment in 85% of Bangla articles, political and cultural context sometimes might got lost in translation. 60% of articles were classified as NEUTRAL, reflects professional journalistic standards in Bangladesh.
 
-##### About this project
 
-This article was written as part of the curriculum of data engineering and analysis courses offered at the Central European University’s Department of Economics. Special thanks go to Zoltan Toth for providing guidance and AWS ecosystem exposure throughout the Data Engineering 1 course.
+#### About this project
+
+This analysis was conducted as part of an academic assignment exploring AWS cloud services of data engineering and analysis courses offered at the Central European University’s Department of Economics. Special thanks go to Zoltan Toth and Naida Dzigal for providing guidance and AWS ecosystem exposure throughout the Data Engineering 1 course.
 

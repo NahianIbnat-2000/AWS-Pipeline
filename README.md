@@ -26,11 +26,6 @@ To run the code locally, AWS credentials must be configured.
 ---
 
 ### 1. Install the AWS CLI
-
-Install the AWS Command Line Interface (CLI) by following the official AWS documentation:
-
-👉 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-
 ---
 
 ### 2. Configure AWS Credentials
@@ -45,7 +40,20 @@ aws configure
 ```bash
 pip install -r requirements.txt
 ```
+## Data Sources
 
+The study utilized a curated list of news articles covering the political developments
+surrounding the 2024 government resignation and subsequent election process in Bangladesh.
+
+| Source | Article Count | Language |
+|---------|---------------|----------------|
+| The Daily Star | 10 | English (en) |
+| Prothom Alo (English) | 10 | Englsih (en) |
+| Prothom Alo (Bangla)ো | 10 | Bangla (bn) |
+| **Total** | **30** | — |
+
+
+###
 
     Explain in your document/blog post explicitly:
     

@@ -48,12 +48,9 @@ This project uses AWS managed services via the **boto3** Python SDK:
 
 To run the code locally, AWS credentials must be configured.
 
----
+#### 1. Install the AWS CLI
 
-### 1. Install the AWS CLI
----
-
-### 2. Configure AWS Credentials
+#### 2. Configure AWS Credentials
 
 After installing the AWS CLI, configure your credentials by running:
 
@@ -67,7 +64,7 @@ aws configure
 # Default output format: json
 ```
 
-### install packages if needed
+#### 3. Install packages if needed
 ```bash
 pip install -r requirements.txt
 ```

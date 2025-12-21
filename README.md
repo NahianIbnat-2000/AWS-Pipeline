@@ -17,14 +17,13 @@ In our project we tried to figure out if the sentiment of the articles differ fr
 ```text
 .
 ├── data/
-│   ├── histogram.png
-│   ├── scatter.png
-│   └── table.png
+│   ├── articles_final.csv
+│   └── articles_raw.csv
 │
-├── images/
+├── outputs/
 │   ├── web_scraping.ipynb
-│   ├── translate.ipynb
-│   └── comprehend.ipynb
+│   ├── table1_overall_sentiment_distribution.csv
+│   └── table2_sentiment_by_source.csv
 │
 ├── serverless/
 │   └── articles.csv

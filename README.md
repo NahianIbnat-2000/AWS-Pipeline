@@ -8,19 +8,31 @@ Course - ECBS5146: Data Science 1, Fall 2025
 
 ### AWS Credentials
 
-This project uses AWS managed services (**Amazon S3, AWS Translate, AWS Comprehend**) via the `boto3` Python SDK.
+This project uses AWS managed services via the **boto3** Python SDK:
+
+- Amazon S3  
+- AWS Translate  
+- AWS Comprehend  
 
 To run the code locally, AWS credentials must be configured.
 
-#### 1. Install the AWS CLI
-Install the AWS CLI following the official AWS documentation:
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+---
 
-#### 2. Configure AWS credentials
+### 1. Install the AWS CLI
+
+Install the AWS Command Line Interface (CLI) by following the official AWS documentation:
+
+👉 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+---
+
+### 2. Configure AWS Credentials
+
 After installing the AWS CLI, configure your credentials by running:
 
 ```bash
 aws configure
+
 
 
     Explain in your document/blog post explicitly:

@@ -1,15 +1,40 @@
 # Group-11_Week5_Assignment
 
-Katharina Burtscher (), Nahian Ibnat (2400062)
+**Katharina Burtscher (2406294), Nahian Ibnat (2400062)**
+    
+**Date - 21.12.2025**
+    
+**Course - ECBS5146: Data Science 1, Fall 2025**
 
-Date - 21.12.2025
+This repository contains code and csv files that we created for their Assignment 3.
+The project looks at the reporting patterns on the BNP (Bangladesh Nationalist Party, a popular religious-conservative party) by two different news sites, [The Daily Star](https://www.thedailystar.net), and [Prothom Alo](https://www.prothomalo.com), a newspaper that publishes both in English and Bangla. The study utilized a curated list of news articles covering the political developments
+surrounding the 2024 government resignation and subsequent election process in Bangladesh.
 
-Course - ECBS5146: Data Science 1, Fall 2025
+In our project we tried to figure out if the sentiment of the articles differ from each other, depending on the news site and the language. In order to do this, we scraped 10 articles from The Daily Star, 10 articles from the English Prothom Ali, as well as 10 articles from the Bengali Prothom Ali website. We translated all of the Bangla articles to English and saved the articles with their urls and both the original and translated version in "articles_final.csv".
 
-This repository contains code and csv files that Katharina Burtscher and Nahian Ibnat created for their Assignment 3.
-Their project tries to look at the reporting on the BNP (Bangladesh Nationalist Party, a popular religious-conservative party) by two different news sites, [The Daily Star](https://www.thedailystar.net), and [Prothom Alo](https://www.prothomalo.com), a newspaper that publishes both in English and Bengali.
+## Repository Structure
 
-In our project we tried to figure out if the sentiment of the articles differ from each other, depending on the news site and the language. In order to do this, we scraped 10 articles from The Daily Star, 10 articles from the English, as well as 10 articles from the Bengali Prothom Ali website. We translated all of the Bengali articles to English and saved the articles with their urls and both the original and translated version in "articles_final.csv".
+```text
+.
+├── data/
+│   ├── histogram.png
+│   ├── scatter.png
+│   └── table.png
+│
+├── images/
+│   ├── web_scraping.ipynb
+│   ├── translate.ipynb
+│   └── comprehend.ipynb
+│
+├── serverless/
+│   └── articles.csv
+│
+├── requirements.txt
+├── LICENSE
+├── requirements.txt
+└── README.md
+
+```
 
 ## Configuration
 
@@ -42,51 +67,18 @@ pip install -r requirements.txt
 ```
 ## Data Sources
 
-The study utilized a curated list of news articles covering the political developments
-surrounding the 2024 government resignation and subsequent election process in Bangladesh.
+The list of news sites analyzed can be found in "data/articles_final.csv", alongside with the full text and translation of the articles. The article urls were hand-picked and used to programmatically scrape the articles, translate and comprehend them. The following table gives and overview of the number of articles per news source:
 
 | Source | Article Count | Language |
 |---------|---------------|----------------|
 | The Daily Star | 10 | English (en) |
-| Prothom Alo (English) | 10 | Englsih (en) |
+| Prothom Alo (English) | 10 | English (en) |
 | Prothom Alo (Bangla)ো | 10 | Bangla (bn) |
 | **Total** | **30** | — |
 
 
-###
+## Analysis Results
 
-    Explain in your document/blog post explicitly:
-    
-    The Problem - What are you researching/trying to solve and how
-    The Dataset / Data Source
-    What you did to arrive at your results
-    Your findings/results
-    Add a section at the end about the breakdown of the costs of the services used (your trial and failure included). It doesn't need to     be an amount down to a penny, but give approximations, like "Using AWS Comprehend on ~1200 words 10 times: $0.12"... Provide a total     cost estimate at the end.
-
-
-
-
-## Repository Structure
-
-```text
-.
-├── images/
-│   ├── histogram.png
-│   ├── scatter.png
-│   └── table.png
-│
-├── serverless/
-│   ├── web_scraping.ipynb
-│   ├── translate.ipynb
-│   └── comprehend.ipynb
-│
-├── data/
-│   └── articles.csv
-│
-├── requirements.txt
-├── LICENSE
-└── README.md
-```
 
 
 ## AWS Service Cost Breakdown
@@ -99,7 +91,9 @@ based on a single execution of the analysis pipeline.
 | **Amazon S3** | Storage of one CSV file (<1 MB) with a small number of upload and list requests | ~$0.00 |
 | **AWS Translate** | Translation of ~30 articles (English & Bangla), automatic language detection and chunking (~60,000 characters total) at $15 per 1M characters | ~$0.90 |
 | **AWS Comprehend** | Sentiment analysis on ~30 English-translated articles (~45,000 characters total) at $0.0001 per 100 characters | ~$0.05 |
-| **Total Estimated Cost** | — | **~$0.95** |
+| **Total Estimated Cost per Run** | — | **~€0.95** |
+
+Both Nahian and Katharina ran the code multiple times independent from each other. Assuming that both ran all of the notebooks/services about three times each, the total estimated cost amounts to **0.95*6 = 5.70€**.
 
 ### Notes
 - Actual costs may be lower if covered by the AWS Free Tier.

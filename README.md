@@ -12,6 +12,24 @@ surrounding the 2024 government resignation and subsequent election process in B
 
 In our project we tried to figure out if the sentiment of the articles differ from each other, depending on the news site and the language. In order to do this, we scraped 10 articles from The Daily Star, 10 articles from the English Prothom Ali, as well as 10 articles from the Bengali Prothom Ali website. We translated all of the Bangla articles to English and saved the articles with their urls and both the original and translated version in "articles_final.csv".
 
+## Problem Statement
+#### Research Question
+Do news sources exhibit different sentiment patterns when covering the same political entity (BNP) based on their language and editorial stance?
+#### Background
+Following the 2024 government resignation and election process in Bangladesh, media coverage of the Bangladesh Nationalist Party (BNP) provides a unique opportunity to analyze:
+
+- Cross-language sentiment differences: How does sentiment differ between Bangla and English reporting?
+- Source bias detection: Do different news outlets show systematic sentiment variations?
+- Translation accuracy: How well does AWS Translate preserve sentiment across languages?
+
+#### Why This Matters
+Understanding media sentiment patterns is crucial for:
+
+- Identifying potential media bias
+- Assessing the impact of language on political reporting
+- Evaluating AI translation quality in political contexts
+- Media literacy and critical news consumption
+
 ## Repository Structure
 
 ```text
@@ -68,12 +86,12 @@ pip install -r requirements.txt
 
 The list of news sites analyzed can be found in "data/articles_final.csv", alongside with the full text and translation of the articles. The article urls were hand-picked and used to programmatically scrape the articles, translate and comprehend them. The following table gives and overview of the number of articles per news source:
 
-| Source | Article Count | Language |
-|---------|---------------|----------------|
-| The Daily Star | 10 | English (en) |
-| Prothom Alo (English) | 10 | English (en) |
-| Prothom Alo (Bangla)ো | 10 | Bangla (bn) |
-| **Total** | **30** | — |
+| Source | Article Count | Language | Editorial Stance |
+|---------|---------------|----------------|----------------|
+| The Daily Star | 10 | English (en) | Center-left, secular |
+| Prothom Alo (English) | 10 | English (en) | Mainstream |
+| Prothom Alo (Bangla)ো | 10 | Bangla (bn) | Mainstream |
+| **Total** | **30** | — | — | 
 
 
 ## Analysis Results

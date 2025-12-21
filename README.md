@@ -32,7 +32,12 @@ After installing the AWS CLI, configure your credentials by running:
 
 ```bash
 aws configure
+```
 
+### install packages if needed
+```bash
+pip install -r requirements.txt
+```
 
 
     Explain in your document/blog post explicitly:

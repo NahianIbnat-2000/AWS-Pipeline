@@ -201,25 +201,35 @@ df['sentiment_analysis'] = df['text_english'].apply(analyze_sentiment)
 ## Findings
 All articles use predominantly neutral language, as almost 100% of all text is categorized as neutral by AWS comprehend.
 
-1. Sentiment_By_Source.png
+### 1. Figure 1
 
-![image](images/Sentiment_By_Source.png)
+![Sentiment By Source](images/Sentiment_By_Source.png)
   
 The first image, "Sentiment_By_Source.png" shows the most probable sentiment for each article. Only two articles, both issued by *The Daily Star*, are not neutral, but seem to have a "mixed" sentiment, which means that the sentiments in the article are both positive and negative at the same time. This could indicate that the language of these two articles might just be more emotional than what one might expect from a newspaper article, on average. 
 
-3. Table1.png
+### 2. Table 1
+   
+![Relationship](images/Table1.png)
 
-![image](images/Table1.png)
 Table1.png shows the relationhip above (categorization in neutral or mixed sentiment), regardless of news source. It only emphasises that only 2 out of 28 articles were of mixed sentiment, and none were explicitly positive or negative.
 
-4. Table2.png
+### 3. Table 2
 
-![image](images/Table2.png)
+![Relationship](images/Table2.png)
+
 This shows the same relationship of "Sentiment_By_Source.png", but in tabular form.
 
-5. average_sentiment_scores_by_source.png
+### 4. Figure 2
+
+![average sentiment score](images/average_sentiment_scores_by_source.png)
    
-![image](images/average_sentiment_scores_by_source.png)
+This image displays the positive, negative and neutral sentiment scores, averaged by news source and language. Overall, one can see that The Daily Star exhibits a slightly lower probabilty for their articles to be neutral, compared to Prothom Alo (in both languages). Furthermore, while being predominantly neutral overall, the English articles published by Prothom Alo more often display positive sentiment, than negative. **This fits a larger picture because Prothom Alo is overall more conservative than The Daily Star and thus more aligned with the BNP**. The same relationship holds for the Bangla articles of Prothom Alo, even though it is less pronounced. This could mean that either AWS translate might default to more neutral terms when in doubt, or the Bangla articles truly show slightly less positive language than the English articles of Prothom Alo.
+   
+### 5. Figure 3
+   
+![Overall Sentiment Distribution](images/overall_sentiment_distribution.png)
+
+This shows the same relationship as Table2.png but as a graph.
 This image displays the positive, negative and neutral sentiment scores, averaged by news source and language. Overall, one can see that The Daily Star exhibits a slightly lower probabilty for their articles to be neutral, compared to Prothom Alo (in both languages). Furthermore, while being predominantly neutral overall, the English articles published by Prothom Alo more often display positive sentiment, than negative. **This fits a larger picture because Prothom Alo is overall more conservative than The Daily Star and thus more aligned with the BNP**. The same relationship holds for the Bangla articles of Prothom Alo, even though it is less pronounced. This could mean that either AWS translate might default to more neutral terms when in doubt, or the Bangla articles truly show slightly less positive language than the English articles of Prothom Alo.
    
 7. overall_sentiment_distribution.png

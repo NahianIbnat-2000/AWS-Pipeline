@@ -261,8 +261,7 @@ Both Nahian and Katharina ran the code multiple times independent from each othe
 
 ## Conclusion
 
-All three news sources showed remarkably similar sentiment distributions. This suggests relatively balanced reporting on BNP with no strong editorial bias. AWS Translate successfully preserved sentiment in 85% of Bangla articles, political and cultural context sometimes might got lost in translation. 60% of articles were classified as NEUTRAL, reflects professional journalistic standards in Bangladesh.
-
+This project demonstrated how AWS serverless managed services can be effectively combined to analyze multilingual news coverage at scale. By scraping political news articles related to the 2025 BNP political party in Bangladesh, translating non-English content into English using AWS Translate, and applying sentiment analysis through AWS Comprehend, we were able to construct a fully reproducible, cloud-based data analysis pipeline. All three news sources exhibited remarkably similar sentiment distributions, suggesting relatively balanced reporting on the Bangladesh Nationalist Party (BNP) with no strong evidence of editorial bias. AWS Translate successfully preserved sentiment in approximately 85% of Bangla-language articles; however, in some cases, political nuance and cultural context appeared to be partially lost during translation. Overall, around 60% of the analyzed articles were classified as NEUTRAL, which reflects the professional and fact-oriented journalistic standards commonly observed in Bangladeshi news reporting.
 
 #### About this project
 

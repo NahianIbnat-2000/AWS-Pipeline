@@ -202,6 +202,8 @@ df['sentiment_analysis'] = df['text_english'].apply(analyze_sentiment)
 All articles use predominantly neutral language, as almost 100% of all text is categorized as neutral by AWS comprehend.
 
 1. Sentiment_By_Source.png
+
+![image](images/Sentiment_By_Source.png)
   
 The first image, "Sentiment_By_Source.png" shows the most probable sentiment for each article. Only two articles, both issued by *The Daily Star*, are not neutral, but seem to have a "mixed" sentiment, which means that the sentiments in the article are both positive and negative at the same time. This could indicate that the language of these two articles might just be more emotional than what one might expect from a newspaper article, on average. 
 

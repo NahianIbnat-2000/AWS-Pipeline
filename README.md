@@ -4,7 +4,7 @@
     
 **Date - 21.12.2025**
     
-**Course - ECBS5146: Data Science 1, Fall 2025**
+**Course - ECBS5146: Data Engineering 1, Fall 2025**
 
 This repository contains code and csv files that we created for the Assignment 3.
 The project looks at the reporting patterns on the BNP (Bangladesh Nationalist Party, a popular religious-conservative party) by two different news sites, [The Daily Star](https://www.thedailystar.net), and [Prothom Alo](https://www.prothomalo.com), a newspaper that publishes both in English and Bangla. The study utilized a curated list of news articles covering the political developments

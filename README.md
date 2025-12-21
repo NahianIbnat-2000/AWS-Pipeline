@@ -238,7 +238,7 @@ This image displays the positive, negative and neutral sentiment scores, average
 
 ## Limitations
 
-In our project, sentiment analysis appears to be only partially successful, as newspaper articles are naturally written in neutral tone. Therefore, the results are limited to the analysis of very small differences between the two sources and languages, so that only careful conclusions can be drawn. Instead of sentiment, it would have been interesting to examine whether the content of the articles is more affirmative or negative and whether the news sources differ in terms of their political orientation.
+In our project, sentiment analysis appears to be only partially successful, as newspaper articles are naturally written in neutral tone. Therefore, the results are limited to the analysis of very small differences between the two sources and languages, so that only careful conclusions can be drawn. Instead of sentiment, it would have been interesting to examine whether the content of the articles is more affirmative or negative and whether the news sources differ in terms of their political orientation. 30 articles may not capture full range of coverage patterns. Also, manual article selection may have introduced unconscious bias. AWS Translate may not capture all Bengali political nuances and AWS Comprehend trained primarily on Western texts may miss cultural context.
 
 ## AWS Service Cost Breakdown
 
@@ -261,7 +261,7 @@ Both Nahian and Katharina ran the code multiple times independent from each othe
 
 ## Conclusion
 
-
+All three news sources showed remarkably similar sentiment distributions. This suggests relatively balanced reporting on BNP with no strong editorial bias. AWS Translate successfully preserved sentiment in 85% of Bangla articles, political and cultural context sometimes might got lost in translation. 60% of articles were classified as NEUTRAL, reflects professional journalistic standards in Bangladesh.
 
 ##### About this project
 

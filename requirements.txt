@@ -1,12 +1,14 @@
 # requirements
 
+**Python>=3.9**
 boto3
-pandas
-requests
+pandas==2.2.3
+requests==2.32.5
 pprint
-sys
+sys==3.4.3
 os
-beautifulsoup4
-jupyter
-time
-matplotlib
+beautifulsoup4==4.14.3
+jupyter==7.5
+time==0.0.17
+matplotlib==3.10.0
+

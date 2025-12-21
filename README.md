@@ -1,5 +1,14 @@
 # Group-11_Week5_Assignment
 
+    Explain in your document/blog post explicitly:
+    
+    The Problem - What are you researching/trying to solve and how
+    The Dataset / Data Source
+    What you did to arrive at your results
+    Your findings/results
+    Add a section at the end about the breakdown of the costs of the services used (your trial and failure included). It doesn't need to     be an amount down to a penny, but give approximations, like "Using AWS Comprehend on ~1200 words 10 times: $0.12"... Provide a total     cost estimate at the end.
+
+
 This repository contains code and csv files that Katharina Burtscher and Nahian Ibnat created for their Assignment 3.
 Their project tries to look at the reporting on the BNP (Bangladesh Nationalist Party, a popular religious-conservative party) by two different news sites, [The Daily Star](https://www.thedailystar.net), and [Prothom Alo](https://www.prothomalo.com), a newspaper that publishes both in English and Bengali.
 

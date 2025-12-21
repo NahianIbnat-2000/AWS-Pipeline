@@ -78,7 +78,7 @@ aws configure
 # Enter when prompted:
 # AWS Access Key ID: [YOUR_ACCESS_KEY]
 # AWS Secret Access Key: [YOUR_SECRET_KEY]
-# Default region: us-east-1
+# Default region: ey-west-1
 # Default output format: json
 ```
 

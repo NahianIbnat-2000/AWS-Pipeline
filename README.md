@@ -259,3 +259,11 @@ Both Nahian and Katharina ran the code multiple times independent from each othe
 - Amazon S3 costs are negligible due to minimal storage and request volume.
 - AWS Translate represents the largest cost component due to character-based pricing.
 
+## Conclusion
+
+
+
+##### About this project
+
+This article was written as part of the curriculum of data engineering and analysis courses offered at the Central European University’s Department of Economics. Special thanks go to Zoltan Toth for providing guidance and AWS ecosystem exposure throughout the Data Engineering 1 course.
+

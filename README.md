@@ -114,22 +114,6 @@ The list of news sites analyzed can be found in "data/articles_final.csv", along
 
 ## Methodology
 
-#### Architecture Overview
-
-## 📊 Data Pipeline Architecture
-```mermaid
-flowchart LR
-    A["Data Collection<br/>↓<br/>Web Scraping<br/>↓<br/>CSV Storage<br/>PNG/Charts"] --> 
-    B["Translation<br/>↓<br/>AWS Translate<br/>↓<br/>S3 Storage"] --> 
-    C["Sentiment Analysis<br/>↓<br/>AWS Comprehend<br/>↓<br/>Results CSV"] --> 
-    D["Visualization<br/>↓<br/>Python Plots<br/>↓<br/>PNG/Charts"]
-    
-    style A fill:#bbdefb,stroke:#1976d2,stroke-width:2px
-    style B fill:#ffe0b2,stroke:#f57c00,stroke-width:2px
-    style C fill:#f8bbd0,stroke:#c2185b,stroke-width:2px
-    style D fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-```
-
 #### AWS Services Implementation
 
 1. Amazon S3 - Data Storage

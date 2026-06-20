@@ -1,6 +1,6 @@
 # Automated Cross-Lingual Sentiment Analysis of Political News: An AWS-Powered Study of Bangladesh Media Coverage
 
-**Katharina Burtscher (2406294), Nahian Ibnat (2400062)**
+**Katharina Burtscher, Nahian Ibnat**
     
 **Date - 21.12.2025**
     
